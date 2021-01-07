@@ -61,17 +61,47 @@
 
 // If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
 
-function firstNonRepeatingLetter(s) {
-    let low = s.toLowerCase()
-    for (let i = 0; i < low.length; i++) {
-        let letter = low[i];
-        let count = 0;
-        low.split('').forEach(unit => {
-            if (letter == unit) count += 1
-        });
-        if (count === 1) return s[i];
-    }
-    return ""
-}
+// function firstNonRepeatingLetter(s) {
+//     let low = s.toLowerCase()
+//     for (let i = 0; i < low.length; i++) {
+//         let letter = low[i];
+//         let count = 0;
+//         low.split('').forEach(unit => {
+//             if (letter == unit) count += 1
+//         });
+//         if (count === 1) return s[i];
+//     }
+//     return ""
+// }
 
-console.log(firstNonRepeatingLetter(""));
+// console.log(firstNonRepeatingLetter(""));
+
+// ----- Simple Pig Latin ----- //
+// ---------------------------- //
+// ---------------------------- //
+// ---------------------------- //
+// ---------------------------- //
+// ---------------------------- //
+// ---------------------------- //
+
+// Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
+
+// function pigIt(str){
+//   let split = str.split(' ');
+//   let answer = [];
+//   split.forEach((word, index) => {
+//     if(/([a-z])/i.test(word)) {
+//       let splitWord = word.split('');
+//       let firstLetter = splitWord.shift();
+//       console.log(firstLetter);
+//       splitWord.push(`${firstLetter}ay`);
+//       let pigWord = splitWord.join('');
+//       answer.push(pigWord)
+//     } else {
+//       answer.push(word)
+//     }
+//   })
+//   return answer.join(' ')
+// }
+
+// console.log(pigIt('I love to read a lot !'));
