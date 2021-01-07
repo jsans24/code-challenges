@@ -87,21 +87,54 @@
 // Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
 
 // function pigIt(str){
-//   let split = str.split(' ');
-//   let answer = [];
-//   split.forEach((word, index) => {
-//     if(/([a-z])/i.test(word)) {
-//       let splitWord = word.split('');
-//       let firstLetter = splitWord.shift();
-//       console.log(firstLetter);
-//       splitWord.push(`${firstLetter}ay`);
-//       let pigWord = splitWord.join('');
-//       answer.push(pigWord)
-//     } else {
-//       answer.push(word)
-//     }
-//   })
-//   return answer.join(' ')
-// }
+  //   let split = str.split(' ');
+  //   let answer = [];
+  //   split.forEach((word, index) => {
+    //     if(/([a-z])/i.test(word)) {
+      //       let splitWord = word.split('');
+      //       let firstLetter = splitWord.shift();
+      //       console.log(firstLetter);
+      //       splitWord.push(`${firstLetter}ay`);
+      //       let pigWord = splitWord.join('');
+      //       answer.push(pigWord)
+      //     } else {
+        //       answer.push(word)
+        //     }
+        //   })
+        //   return answer.join(' ')
+        // }
+        
+        // console.log(pigIt('I love to read a lot !'));
 
-// console.log(pigIt('I love to read a lot !'));
+// -------- Snail Sort -------- //
+// ---------------------------- //
+// ---------------------------- //
+// ---------------------------- //
+// ---------------------------- //
+// ---------------------------- //
+// ---------------------------- //
+
+// snail = function(arr) {
+//   let answer = [];
+//   if(arr.length < 2) return arr[0];
+//   while(arr.length){
+//     answer.push(...arr.shift())
+//       for (var i = 0; i < arr.length; i++){
+//         answer.push(arr[i].pop())
+//       }
+//       answer.push(...(arr.pop() || []).reverse())
+//       for (var i = arr.length -1; i >= 0; i--){
+//         answer.push(arr[i].shift())
+//       }
+//     }
+//     return answer
+//   }
+
+
+// console.log(snail([ 
+//   [ 1, 2, 3, 4, 5, 6 ],
+//   [ 20, 21, 22, 23, 24, 7 ],
+//   [ 19, 32, 33, 34, 25, 8 ],
+//   [ 18, 31, 36, 35, 26, 9 ],
+//   [ 17, 30, 29, 28, 27, 10 ],
+//   [ 16, 15, 14, 13, 12, 11 ] ]))
